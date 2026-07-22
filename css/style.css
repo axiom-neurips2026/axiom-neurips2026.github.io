@@ -29,7 +29,7 @@ body{margin:0;background:#fff;color:var(--ink);font-family:"Helvetica Neue Light
 .hero-content{position:relative;padding-top:64px}
 .hero-wordmark{margin-bottom:13px}.hero-wordmark .wordmark{font-size:clamp(3.8rem,8.6vw,7rem)}
 .hero-subtitle{margin:0;color:#071434;font-size:clamp(1.25rem,2.3vw,1.65rem);font-weight:500;line-height:1.25}
-.hero-tagline{max-width:650px;margin:14px 0 0;color:#342c70;font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.45}
+.hero-tagline{max-width:650px;margin:14px 0 0;color:#342c70;font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.45;font-weight:700;font-style:italic}
 .hero-rule{width:min(510px,66vw);height:2px;margin:19px 0 14px;background:linear-gradient(90deg,#6427ff,#1c6fff)}
 .hero-meta{margin:0;color:#4538a7;font-size:clamp(1rem,1.7vw,1.25rem);font-weight:500}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
