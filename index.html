@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AXIOM 2026 — NeurIPS 2026 Workshop">
+  <meta name="description" content="AXIOM 2026 — Foundations of Efficient Deep Learning, a NeurIPS 2026 workshop in Paris, France.">
   <meta name="theme-color" content="#1c6fff">
   <title>AXIOM 2026 · NeurIPS Workshop</title>
   <link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,9 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="nav-wrap container">
-      <a class="brand" href="#top" aria-label="AXIOM 2026 home">
+      <a class="brand" href="#top" aria-label="Back to the top of AXIOM 2026">
         <span class="wordmark wordmark-small" aria-hidden="true">
           <span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span>
         </span>
@@ -39,7 +39,7 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
         <div class="hero-wordmark" aria-label="AXIOM">
@@ -47,12 +47,12 @@
             <span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span>
           </span>
         </div>
-        <h1 class="sr-only">AXIOM 2026</h1>
+        <h1 id="hero-title" class="sr-only">AXIOM 2026</h1>
         <p class="hero-subtitle">Foundations of Efficient Deep Learning</p>
         <div class="hero-rule" aria-hidden="true"></div>
         <p class="hero-meta">NeurIPS 2026 · Paris, France</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#about">Explore the workshop</a>
+          <a class="button button-primary" href="#about">About the workshop</a>
           <a class="button button-ghost" href="#program">View program</a>
         </div>
       </div>
@@ -62,11 +62,11 @@
       <div class="container split reveal">
         <div>
           <p class="section-kicker">About</p>
-          <h2>A focused forum for the AXIOM community</h2>
+          <h2>Foundations for efficient deep learning</h2>
         </div>
         <div class="prose">
-          <p>Replace this paragraph with the opening text from your current Google Site. The layout is intentionally spacious and readable, with anchored sections and native smooth scrolling.</p>
-          <p>Use this second paragraph for the motivation, workshop goals, and intended audience.</p>
+          <p>Deep learning systems continue to grow in scale and capability, but their computational, memory, data, and energy requirements increasingly limit who can train, study, and deploy them. AXIOM brings together researchers working on the mathematical foundations and practical mechanisms of efficient deep learning.</p>
+          <p>The workshop aims to connect theory and practice: from learning dynamics, optimization, approximation, and generalization to efficient architectures, compression, data efficiency, and resource-aware deployment. We seek a shared language for understanding why efficient methods work, where their limits lie, and how foundational insights can guide the design of future learning systems.</p>
         </div>
       </div>
     </section>
@@ -75,11 +75,11 @@
       <div class="container reveal">
         <p class="section-kicker">Scope</p>
         <h2>Topics of interest</h2>
-        <div class="card-grid topics-grid">
-          <article class="topic-card"><span>01</span><h3>Topic area one</h3><p>Short description copied from your current call for papers.</p></article>
-          <article class="topic-card"><span>02</span><h3>Topic area two</h3><p>Short description copied from your current call for papers.</p></article>
-          <article class="topic-card"><span>03</span><h3>Topic area three</h3><p>Short description copied from your current call for papers.</p></article>
-          <article class="topic-card"><span>04</span><h3>Topic area four</h3><p>Short description copied from your current call for papers.</p></article>
+        <div class="topic-list">
+          <article><h3>Learning dynamics and optimization</h3><p>Training dynamics, implicit bias, loss landscapes, feature learning, scaling behaviour, and optimization in overparameterized models.</p></article>
+          <article><h3>Approximation and generalization</h3><p>Expressivity, approximation theory, capacity, generalization, robustness, and the mathematical limits of efficient learning.</p></article>
+          <article><h3>Efficient architectures and algorithms</h3><p>Sparsity, low-rank methods, pruning, quantization, distillation, conditional computation, modularity, and adaptive inference.</p></article>
+          <article><h3>Resource-aware learning systems</h3><p>Hardware-aware training, energy and memory efficiency, data-efficient learning, deployment constraints, and sustainable AI.</p></article>
         </div>
       </div>
     </section>
@@ -89,10 +89,10 @@
         <p class="section-kicker">Timeline</p>
         <h2>Important dates</h2>
         <div class="timeline">
-          <div class="timeline-item"><time datetime="2026-05-01">May 1, 2026</time><div><h3>Submission deadline</h3><p>Anywhere on Earth</p></div></div>
-          <div class="timeline-item"><time datetime="2026-06-01">June 1, 2026</time><div><h3>Author notification</h3><p>Decision notifications sent by email</p></div></div>
-          <div class="timeline-item"><time datetime="2026-06-15">June 15, 2026</time><div><h3>Camera-ready deadline</h3><p>Final material due</p></div></div>
-          <div class="timeline-item"><time datetime="2026-12-01">December 2026</time><div><h3>Workshop day</h3><p>Exact date to be announced</p></div></div>
+          <div class="timeline-item"><time>TBA</time><div><h3>Submission deadline</h3><p>11:59 PM Anywhere on Earth</p></div></div>
+          <div class="timeline-item"><time>TBA</time><div><h3>Author notification</h3><p>Notifications will be sent by email.</p></div></div>
+          <div class="timeline-item"><time>TBA</time><div><h3>Camera-ready deadline</h3><p>Final workshop material due.</p></div></div>
+          <div class="timeline-item"><time>December 2026</time><div><h3>Workshop day</h3><p>NeurIPS 2026, Paris, France. Exact date to be announced.</p></div></div>
         </div>
       </div>
     </section>
@@ -100,14 +100,14 @@
     <section id="speakers" class="section section-dark">
       <div class="container reveal">
         <p class="section-kicker">Invited speakers</p>
-        <h2>Perspectives from across the field</h2>
-        <div class="people-grid">
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Speaker name</h3><p>Affiliation</p></article>
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Katharina Eggensperger</h3><p>Affiliation</p></article>
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Michael Kamp</h3><p>Affiliation</p></article>
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Speaker name</h3><p>Affiliation</p></article>
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Alexander Van Meegen</h3><p>Affiliation</p></article>
-          <article class="person-card"><div class="person-photo placeholder">Photo</div><h3>Hannah Pinson</h3><p>Affiliation</p></article>
+        <h2>Perspectives from theory and efficiency</h2>
+        <div class="speaker-list">
+          <article><h3>Invited Vision Talk 1</h3><p>Speaker to be announced</p></article>
+          <article><h3>Katharina Eggensperger</h3><p>Invited Vision Talk · Efficiency</p></article>
+          <article><h3>Michael Kamp</h3><p>Invited Vision Talk · Efficiency</p></article>
+          <article><h3>Invited Vision Talk 4</h3><p>Speaker to be announced</p></article>
+          <article><h3>Alexander Van Meegen</h3><p>Invited Vision Talk · Theory</p></article>
+          <article><h3>Hannah Pinson</h3><p>Invited Vision Talk · Theory</p></article>
         </div>
       </div>
     </section>
@@ -116,24 +116,23 @@
       <div class="container reveal">
         <p class="section-kicker">Schedule</p>
         <div class="section-heading-row"><h2>Workshop program</h2><p>Times shown in CET</p></div>
-
         <div class="program" role="table" aria-label="Workshop program">
           <div class="program-row program-head" role="row"><div role="columnheader">Time</div><div role="columnheader">Session</div><div role="columnheader">Speaker(s)</div></div>
-          <div class="program-row" role="row"><time>09:00 – 09:15</time><div>Opening Remarks</div><div>Organizers</div></div>
-          <div class="program-row" role="row"><time>09:15 – 09:30</time><div>Invited Vision Talk 1 (Efficiency)</div><div>TBD</div></div>
-          <div class="program-row" role="row"><time>09:30 – 09:45</time><div>Invited Vision Talk 2 (Efficiency)</div><div>Katharina Eggensperger</div></div>
-          <div class="program-row" role="row"><time>09:45 – 10:00</time><div>Invited Vision Talk 3 (Efficiency)</div><div>Michael Kamp</div></div>
-          <div class="program-row" role="row"><time>10:00 – 10:30</time><div>Oral Presentations (2 × 15 min)</div><div>TBD</div></div>
-          <div class="program-row break" role="row"><time>10:30 – 10:45</time><div>Coffee Break</div><div>—</div></div>
-          <div class="program-row" role="row"><time>10:45 – 12:00</time><div>Oral Presentations (5 × 15 min)</div><div>TBD</div></div>
-          <div class="program-row break" role="row"><time>12:00 – 13:00</time><div>Lunch</div><div>—</div></div>
-          <div class="program-row" role="row"><time>13:00 – 14:30</time><div>Poster Session</div><div>TBD</div></div>
-          <div class="program-row" role="row"><time>14:30 – 14:45</time><div>Invited Vision Talk 4 (Theory)</div><div>TBD</div></div>
-          <div class="program-row" role="row"><time>14:45 – 15:00</time><div>Invited Vision Talk 5 (Theory)</div><div>Alexander Van Meegen</div></div>
-          <div class="program-row" role="row"><time>15:00 – 15:15</time><div>Invited Vision Talk 6 (Theory)</div><div>Hannah Pinson</div></div>
-          <div class="program-row break" role="row"><time>15:15 – 15:30</time><div>Coffee Break</div><div>—</div></div>
-          <div class="program-row" role="row"><time>15:30 – 16:15</time><div>Grand Challenges &amp; Research Directions</div><div>Organizers + Panelists</div></div>
-          <div class="program-row" role="row"><time>16:15 – 16:30</time><div>Closing &amp; Best Paper Award</div><div>Organizers</div></div>
+          <div class="program-row"><time>09:00 – 09:15</time><div>Opening Remarks</div><div>Organizers</div></div>
+          <div class="program-row"><time>09:15 – 09:30</time><div>Invited Vision Talk 1 (Efficiency)</div><div>TBD</div></div>
+          <div class="program-row"><time>09:30 – 09:45</time><div>Invited Vision Talk 2 (Efficiency)</div><div>Katharina Eggensperger</div></div>
+          <div class="program-row"><time>09:45 – 10:00</time><div>Invited Vision Talk 3 (Efficiency)</div><div>Michael Kamp</div></div>
+          <div class="program-row"><time>10:00 – 10:30</time><div>Oral Presentations (2 × 15 min)</div><div>TBD</div></div>
+          <div class="program-row break"><time>10:30 – 10:45</time><div>Coffee Break</div><div>—</div></div>
+          <div class="program-row"><time>10:45 – 12:00</time><div>Oral Presentations (5 × 15 min)</div><div>TBD</div></div>
+          <div class="program-row break"><time>12:00 – 13:00</time><div>Lunch</div><div>—</div></div>
+          <div class="program-row"><time>13:00 – 14:30</time><div>Poster Session</div><div>TBD</div></div>
+          <div class="program-row"><time>14:30 – 14:45</time><div>Invited Vision Talk 4 (Theory)</div><div>TBD</div></div>
+          <div class="program-row"><time>14:45 – 15:00</time><div>Invited Vision Talk 5 (Theory)</div><div>Alexander Van Meegen</div></div>
+          <div class="program-row"><time>15:00 – 15:15</time><div>Invited Vision Talk 6 (Theory)</div><div>Hannah Pinson</div></div>
+          <div class="program-row break"><time>15:15 – 15:30</time><div>Coffee Break</div><div>—</div></div>
+          <div class="program-row"><time>15:30 – 16:15</time><div>Grand Challenges &amp; Research Directions</div><div>Organizers + Panelists</div></div>
+          <div class="program-row"><time>16:15 – 16:30</time><div>Closing &amp; Best Paper Award</div><div>Organizers</div></div>
         </div>
       </div>
     </section>
@@ -142,27 +141,38 @@
       <div class="container reveal">
         <p class="section-kicker">Team</p>
         <h2>Organizers</h2>
-        <div class="people-grid compact">
-          <article class="organizer-card"><div class="avatar placeholder">Photo</div><div><h3>Organizer name</h3><p>Institution</p></div></article>
-          <article class="organizer-card"><div class="avatar placeholder">Photo</div><div><h3>Organizer name</h3><p>Institution</p></div></article>
-          <article class="organizer-card"><div class="avatar placeholder">Photo</div><div><h3>Organizer name</h3><p>Institution</p></div></article>
-          <article class="organizer-card"><div class="avatar placeholder">Photo</div><div><h3>Organizer name</h3><p>Institution</p></div></article>
+        <div class="organizer-grid">
+          <article class="organizer-card"><img src="images/bernhard-geiger.jpg" alt="Bernhard Geiger"><div><h3>Bernhard C. Geiger</h3><p>Graz University of Technology &amp; Know-Center<br>ELLIS Unit Graz</p></div></article>
+          <article class="organizer-card"><img src="images/flavio-martinelli.jpg" alt="Flavio Martinelli"><div><h3>Flavio Martinelli</h3><p>École Polytechnique Fédérale de Lausanne (EPFL)<br>ELLIS Unit Lausanne</p></div></article>
+          <article class="organizer-card"><img src="images/linara-adilova.jpg" alt="Linara Adilova"><div><h3>Linara Adilova</h3><p>TU Dortmund University &amp; Lamarr Institute<br>ELLIS Unit Ruhr</p></div></article>
+          <article class="organizer-card"><img src="images/olga-saukh.jpg" alt="Olga Saukh"><div><h3>Olga Saukh</h3><p>Graz University of Technology &amp; Complexity Science Hub<br>ELLIS Unit Graz</p></div></article>
+          <article class="organizer-card"><img src="images/yedi-zhang.jpg" alt="Yedi Zhang"><div><h3>Yedi Zhang</h3><p>Gatsby Computational Neuroscience Unit<br>University College London</p></div></article>
+        </div>
+
+        <div class="ellis-block">
+          <p class="section-kicker">Supported by</p>
+          <h3>ELLIS Units</h3>
+          <div class="ellis-logos">
+            <img src="images/ellis_unit_graz.jpg" alt="ELLIS Unit Graz">
+            <img src="images/ellis_unit_lausanne.jpg" alt="ELLIS Unit Lausanne">
+            <img src="images/ellis_unit_nrw.jpg" alt="ELLIS Unit North Rhine-Westphalia">
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
       <div class="container contact-card reveal">
-        <div><p class="section-kicker">Contact</p><h2>Questions about AXIOM 2026?</h2><p>For questions about the workshop, submissions, or participation, contact the AXIOM 2026 organizers.</p></div>
-        <a class="button button-primary" href="mailto:axiom.neurips2026@gmail.com">Email the organizers</a>
+        <div><p class="section-kicker">Contact</p><h2>Questions about AXIOM 2026?</h2><p>For questions about the workshop, submissions, or participation, contact the organizing team.</p></div>
+        <a class="button button-primary" href="mailto:axiom.neurips2026@gmail.com">axiom.neurips2026@gmail.com</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><strong>AXIOM 2026</strong><p>NeurIPS 2026 Workshop</p></div>
-      <div><a href="#top">Back to top ↑</a><p>© 2026 AXIOM organizers</p></div>
+      <div><strong>AXIOM 2026</strong><p>Foundations of Efficient Deep Learning · NeurIPS 2026</p></div>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 </body>
