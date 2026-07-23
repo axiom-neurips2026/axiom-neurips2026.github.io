@@ -11,7 +11,6 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  
 
   <header class="site-header">
     <div class="nav-wrap container">
@@ -42,13 +41,24 @@
         <div class="hero-rule" aria-hidden="true"></div>
         <p class="hero-meta"><strong>NeurIPS 2026 · Paris, France</strong></p>
         <p class="hero-date"><strong>December 12–13, 2026</strong></p>
+        <div class="hero-actions" aria-label="Workshop actions">
+          <a class="button button-primary" href="#cfp">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+            <span>Call for Papers</span>
+          </a>
+          <a class="button button-ghost" href="https://openreview.net/" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
+            <span>Submit on OpenReview</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section id="overview" class="section">
       <div class="container narrow reveal prose">
+        <h2>About the Workshop</h2>
         <p>Recent advances in deep learning theory suggest that machine learning is gradually evolving from an empirical discipline into a predictive science. Scaling laws, optimization theory, learning dynamics, and representation learning increasingly explain why modern deep learning systems work. Yet these advances have had limited impact on one of today's most pressing challenges: building AI systems that are efficient under realistic constraints of compute, memory, energy, communication, and data. Current efficiency techniques, such as pruning, quantization, sparse computation, adaptive inference, and efficient architecture, remain largely driven by empirical investigation. Conversely, many theoretical advances explain observations only after the fact, rather than predicting which algorithms or architectures will be most effective before expensive experimentation.</p>
-        <p>The AXIOM Workshop brings together researchers from deep learning theory, machine learning systems, optimization, and efficient AI to explore a central question:</p>
+        <p><strong>Our goal.</strong> The AXIOM Workshop brings together researchers from deep learning theory, machine learning systems, optimization, and efficient AI to explore a central question:</p>
         <blockquote>Can we develop predictive principles that guide the design of efficient AI systems?</blockquote>
         <p>Our goal is to bridge theory and practice by identifying the mathematical principles underlying efficient learning and by defining the next generation of research challenges for efficient deep learning. The workshop features invited vision talks, contributed papers, posters, panel discussions, and a community-driven <a href="#grand-challenges">Grand Challenges initiative</a> that will collectively shape a research agenda for the foundations of efficient AI.</p>
       </div>
@@ -80,7 +90,7 @@
           </article>
           <article class="speaker-card">
             <img class="speaker-photo" src="images/speakers/hannah-pinson.jpg" alt="Hannah Pinson">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Hannah Pinson</h3><p>Eindhoven University of Technology (TU/e)</p></div>
+            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Hannah Pinson</h3><p>Eindhoven University of Technology (TU/e), Netherlands</p></div>
           </article>
         </div>
       </div>
@@ -102,7 +112,7 @@
 
           <h3>Paper Submission</h3>
           <p>We invite submissions presenting <strong>original research, preliminary results, novel ideas, and emerging research directions</strong> that advance the theoretical and practical foundations of efficient deep learning. We particularly encourage work that connects deep learning theory with efficient machine learning, including studies that improve our understanding of resource-efficient learning, reveal new theoretical principles, or bridge the gap between mathematical foundations and practical AI systems.</p>
-          <p>Submissions should be <strong>up to 4 pages</strong> (excluding references) and follow the NeurIPS workshop formatting guidelines. All papers will undergo peer review by the Program Committee. Accepted papers will be presented as posters, with a selection invited for contributed oral presentations. A <strong>Best Paper Award</strong> will be presented during the workshop.</p>
+          <p>We invite short paper submissions (<strong>4 pages</strong>, excluding references) which follow the NeurIPS workshop formatting guidelines. Please use the <a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">NeurIPS 2026 LaTeX template</a>. All papers will undergo peer review by the Program Committee. This workshop is non-archival. Outstanding submissions will be invited for a 15-minute oral presentation. All accepted papers will be presented during the poster session. A <strong>Best Paper Award</strong> will be presented during the workshop.</p>
 
           <h3 id="grand-challenges">Grand Challenges Track</h3>
           <p>Beyond research papers, AXIOM introduces a <strong>Grand Challenges</strong> track designed to identify the most important open questions for the future of efficient AI. Instead of reporting completed research, Grand Challenges submissions should articulate important unanswered questions, theoretical gaps, surprising empirical observations, or future research opportunities. We particularly encourage contributions on:</p>
@@ -123,13 +133,17 @@
           </dl>
 
           <h3>Submission Details</h3>
-          <p><strong>Submission site:</strong> OpenReview (link coming soon).</p>
+          <p><strong>Submission site:</strong> <a href="https://openreview.net/" target="_blank" rel="noopener noreferrer">OpenReview</a>.</p>
           <p><strong>Submission and review format:</strong></p>
           <ul>
             <li><strong>Papers:</strong> up to 4 pages excluding references and appendix, double-blind;</li>
-            <li><strong>Grand Challenges:</strong> 1 page excluding references, no appendix, single-blind. The Grand Challenges track will use a separate OpenReview track.</li>
+            <li><strong>Grand Challenges:</strong> 1 page excluding references, no appendix, double-blind.</li>
           </ul>
-          <p>Information on the non-archival status and the policy on dual submissions will be announced.</p>
+          <p>Workshop submissions must not duplicate work previously published at machine learning or related conferences. Work presented at the main NeurIPS conference must not also appear in the workshop, including as part of an invited talk.</p>
+          <p><a class="button button-primary submission-button" href="https://openreview.net/" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
+            <span>Submit to OpenReview</span>
+          </a></p>
         </div>
       </div>
     </section>

@@ -61,3 +61,15 @@ body{margin:0;background:#fff;color:var(--ink);font-family:"Helvetica Neue Light
 .origin-note{margin:-8px 0 24px;color:var(--muted)}.origin-note a{color:var(--accent);text-decoration:none}.origin-note a:hover{text-decoration:underline}
 .ellis-logos{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
 @media(max-width:650px){.dates-list div{grid-template-columns:1fr;gap:2px}.prose h3{font-size:1.18rem}.hero-date{font-size:.92rem}}
+
+
+/* Revised hero and submission actions */
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.button{gap:10px;min-height:48px;padding:11px 20px;border-radius:10px;font-weight:700;line-height:1}
+.button svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.button-primary{background:linear-gradient(135deg,#6427ff,#2d4bff);color:#fff;box-shadow:0 10px 25px rgba(70,45,230,.26)}
+.button-ghost{color:#071434;border:1.5px solid rgba(7,20,52,.45);background:rgba(255,255,255,.65);backdrop-filter:blur(6px)}
+.hero-meta,.hero-date{font-weight:800}
+.prose>h2:first-child{margin-bottom:26px}
+.submission-button{display:inline-flex;margin-top:8px;text-decoration:none}
+@media(max-width:650px){.hero-actions{display:grid;grid-template-columns:1fr}.hero-actions .button{width:100%}.button{min-height:46px}}
