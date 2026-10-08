@@ -1,14 +1,15 @@
-<!doctype html>
-<html lang="en" id="top">
+<!DOCTYPE html>
+
+<html id="top" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AXIOM 2026 — Foundations of Efficient Deep Learning, a NeurIPS 2026 workshop in Paris, France, December 13, 2026.">
-  <meta name="theme-color" content="#1c6fff">
-  <title>AXIOM 2026 · NeurIPS Workshop</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="AXIOM 2026 — Foundations of Efficient Deep Learning, a NeurIPS 2026 workshop in Paris, France, December 13, 2026." name="description"/>
+<meta content="#1c6fff" name="theme-color"/>
+<title>AXIOM 2026 · NeurIPS Workshop</title>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+<style>
     /* Avoid a double separator between the organizers and ELLIS Unit logos. */
     .organizer-list .organizer-card:last-child { border-bottom: 0; }
     /* Four speakers on top, three centered below on wider screens. */
@@ -20,210 +21,202 @@
       .speaker-grid > .speaker-card:nth-child(7) { grid-column: 6 / span 2; }
     }
   </style>
-</head>
+<style>
+    /* Compact, readable lists of accepted submissions. */
+    .accepted-paper-list { padding-left: 1.35rem; margin: .75rem 0 2rem; }
+    .accepted-paper-list li { margin-bottom: .65rem; line-height: 1.5; }
+    .accepted-paper-list a { overflow-wrap: anywhere; }
+</style></head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="nav-wrap container">
-      <a class="brand" href="#top" aria-label="Back to the top of AXIOM 2026">
-        <span class="wordmark wordmark-small" aria-hidden="true"><span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span></span>
-        <span class="sr-only">AXIOM 2026</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span></span><span></span><span></span></button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#overview">Overview</a>
-        <a href="#speakers">Invited Speakers</a>
-        <a href="#cfp">CFP</a>
-        <a href="#program">Program</a>
-        <a href="#organizers">Organizing Team</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content reveal">
-        <div class="hero-wordmark" aria-label="AXIOM"><span class="wordmark" aria-hidden="true"><span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span></span></div>
-        <h1 id="hero-title" class="sr-only">AXIOM 2026</h1>
-        <p class="hero-subtitle">Foundations of Efficient Deep Learning</p>
-        <p class="hero-tagline"><strong><em>Towards predictive principles for efficient AI connecting deep learning theory, scaling laws, and efficiency</em></strong></p>
-        <div class="hero-rule" aria-hidden="true"></div>
-        <p class="hero-meta"><strong>NeurIPS 2026 · Paris, France</strong></p>
-        <p class="hero-date"><strong>December 13, 2026</strong></p>
-        <p class="hero-room"><strong>Room: Salle 252 · Location: Palais des Congrès de Paris</strong></p>
-        <div class="hero-actions" aria-label="Workshop actions">
-          <a class="button button-primary" href="#cfp">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
-            <span>Call for Papers</span>
-          </a>
-          <a class="button button-ghost" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" target="_blank" rel="noopener noreferrer">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
-            <span>Submit on OpenReview</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="overview" class="section">
-      <div class="container narrow reveal prose">
-        <h2>About the Workshop</h2>
-        <p>Recent advances in deep learning theory suggest that machine learning is gradually evolving from an empirical discipline into a predictive science. Scaling laws, optimization theory, learning dynamics, and representation learning increasingly explain why modern deep learning systems work. Yet these advances have had limited impact on one of today's most pressing challenges: building AI systems that are efficient under realistic constraints of compute, memory, energy, communication, and data. Current efficiency techniques, such as pruning, quantization, sparse computation, adaptive inference, and efficient architecture, remain largely driven by empirical investigation. Conversely, many theoretical advances explain observations only after the fact, rather than predicting which algorithms or architectures will be most effective before expensive experimentation.</p>
-        <p>The AXIOM Workshop brings together researchers from deep learning theory, machine learning systems, optimization, and efficient AI to explore a central question:</p>
-        <blockquote>Can we develop predictive principles that guide the design of efficient AI systems?</blockquote>
-        <p><strong>Our goal</strong> is to bridge theory and practice by identifying the mathematical principles underlying efficient learning and by defining the next generation of research challenges for efficient deep learning. The workshop features invited vision talks, contributed papers, posters, panel discussions, and a community-driven <a href="#grand-challenges">Grand Challenges initiative</a> that will collectively shape a research agenda for the foundations of efficient AI.</p>
-      </div>
-    </section>
-
-    <section id="speakers" class="section section-dark">
-      <div class="container narrow reveal">
-        <h2>Invited Speakers</h2>
-        <div class="speaker-grid">
-          <article class="speaker-card">
-              <img class="speaker-photo" src="images/speakers/rahim-entezari.jpg" alt="Rahim Entezari">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Rahim Entezari</h3><p>Starting something new ... (ex-StabilityAI, ex-Wayve), UK</p></div>
-          </article>
-          <article class="speaker-card">
-            <img class="speaker-photo" src="images/speakers/katharina-eggensperger.jpg" alt="Katharina Eggensperger">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Katharina Eggensperger</h3><p>Lamarr Institute and TU Dortmund, Germany</p></div>
-          </article>
-          <article class="speaker-card">
-            <img class="speaker-photo" src="images/speakers/michael-kamp.jpg" alt="Michael Kamp">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Michael Kamp</h3><p>Lamarr Institute and TU Dortmund, Germany</p></div>
-          </article>
-          <article class="speaker-card">
-            <a href="https://flodorner.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Florian E. Dorner's website">
-              <img class="speaker-photo" src="images/speakers/florian-dorner.jpg" alt="Florian E. Dorner">
-            </a>
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Scaling Laws</p><h3>Florian E. Dorner</h3><p>MPI-IS / ETH Zürich, Germany / Switzerland</p></div>
-          </article>
-          <article class="speaker-card">
-              <img class="speaker-photo" src="images/speakers/bruno-loureiro.jpg" alt="Bruno Loureiro">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Bruno Loureiro</h3><p>CNRS & École Normale Supérieure, France</p></div>
-          </article>
-          <article class="speaker-card">
-            <img class="speaker-photo" src="images/speakers/alexander-van-meegen.jpg" alt="Alexander van Meegen">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Alexander van Meegen</h3><p>RWTH Aachen, Germany</p></div>
-          </article>
-          <article class="speaker-card">
-            <img class="speaker-photo" src="images/speakers/hannah-pinson.jpg" alt="Hannah Pinson">
-            <div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Hannah Pinson</h3><p>Eindhoven University of Technology (TU/e), Netherlands</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cfp" class="section">
-      <div class="container narrow reveal">
-        <h2>Call For Papers</h2>
-        <div class="prose">
-          <h3>Topics of Interest</h3>
-          <p>We welcome submissions addressing theoretical, algorithmic, and systems aspects of efficient deep learning, including but not limited to:</p>
-          <ul>
-            <li><strong>Predictive Theory for Efficient Learning:</strong> Scaling laws for efficient models, compute-optimal training and inference, predicting capability under resource constraints, optimization and learning dynamics, generalization under limited compute or data, phase transitions in efficient learning;</li>
-            <li><strong>Sparsity, Compression, and Model Structure:</strong> Foundations of pruning and quantization, sparse and modular neural networks, lottery tickets and subnetworks, adaptive computation, neural architecture design, representation learning for efficiency;</li>
-            <li><strong>Efficient Foundation Models:</strong> Efficient LLMs and multimodal models, efficient reasoning and adaptive inference, mixture-of-experts and modular architectures, test-time adaptation, memory-efficient training and inference, distillation and compression;</li>
-            <li><strong>Foundations and Future Directions:</strong> Theoretical limits of efficient AI, new efficiency metrics and benchmarks, predictive models of training dynamics, interpretability of efficient models, mathematical foundations of efficient deep learning, emerging theoretical paradigms for efficient AI.</li>
-          </ul>
-          <p>Interdisciplinary work connecting theory, algorithms, systems, and hardware is particularly encouraged.</p>
-
-          <h3>Paper Submission</h3>
-          <p>We invite submissions presenting <strong>original research, preliminary results, novel ideas, and emerging research directions</strong> that advance the theoretical and practical foundations of efficient deep learning. We particularly encourage work that connects deep learning theory with efficient machine learning, including studies that improve our understanding of resource-efficient learning, reveal new theoretical principles, or bridge the gap between mathematical foundations and practical AI systems.</p>
-          <p>We invite short paper submissions (<strong>4 pages</strong>, excluding references) which follow the NeurIPS workshop formatting guidelines. This workshop is non-archival. Outstanding submissions will be invited for a 15-minute oral presentation. All accepted papers will be presented during the poster session and published on the workshop website. A <strong>Best Paper Award</strong> will be presented during the workshop.</p>
-
-          <h3 id="grand-challenges">Grand Challenges Track</h3>
-          <p>Beyond research papers, AXIOM introduces a <strong>Grand Challenges</strong> track designed to identify the most important open questions for the future of efficient AI. Instead of reporting completed research, Grand Challenges submissions should articulate important unanswered questions, theoretical gaps, surprising empirical observations, or future research opportunities. We particularly encourage contributions on:</p>
-          <ul>
-            <li>Open theoretical questions motivated by efficient AI;</li>
-            <li>Efficiency methods lacking theoretical explanations;</li>
-            <li>Contradictions between theory and practice;</li>
-            <li>Missing benchmarks, evaluation methodologies, or efficiency metrics.</li>
-          </ul>
-          <p>Accepted submissions will be published on the workshop website and synthesized into a community report that will serve as the starting point for an interactive discussion session during the workshop. The insights from this discussion will contribute to a community position paper outlining a research agenda for predictive and efficient AI.</p>
-          <p>Grand Challenges submissions should consist of a one-page abstract plus references, with no appendix. They will undergo a light review and accepted submissions will be published on the workshop webpage.</p>
-
-          <h3>Important Dates</h3>
-          <dl class="dates-list">
-            <div><dt>Paper submission</dt><dd>August 29, 2026 (11:59 PM UTC-0)</dd></div>
-            <div><dt>Author notification</dt><dd>September 29, 2026 (AoE)</dd></div>
-            <div><dt>Camera-ready deadline</dt><dd>November 15, 2026 (AoE)</dd></div>
-          </dl>
-
-          <h3>Submission Details</h3>
-          <p><strong>Submission site:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" target="_blank" rel="noopener noreferrer">OpenReview</a>.</p>
-          <p><strong>Submission format instructions:</strong></p>
-          <ul>
-            <li><strong>Papers:</strong> 4 pages excluding references and appendix, double-blind;</li>
-            <li><strong>Grand Challenges:</strong> 1 page excluding references, no appendix, double-blind.</li>
-          </ul>
-          <p>Please use the <a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">NeurIPS 2026 LaTeX template</a>. All papers will undergo peer review by the Program Committee.</p>
-          <p>Following the <a href="https://neurips.cc/Conferences/2026/WorkshopsGuidance" target="_blank" rel="noopener noreferrer">Guidance for NeurIPS Workshop Proposals 2026</a>, workshop submissions must not duplicate work previously published at machine learning or related conferences. Work presented at the main NeurIPS conference must not also appear in the workshop, including as part of an invited talk. All authors, reviewers, presenters, and participants are expected to follow the <a href="https://neurips.cc/public/CodeOfConduct" target="_blank" rel="noopener noreferrer">NeurIPS Code of Conduct</a>.</p>
-          <p><a class="button button-primary submission-button" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" target="_blank" rel="noopener noreferrer">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
-            <span>Submit to OpenReview</span>
-          </a></p>
-          <h3>Camera-Ready Instructions</h3>
-          <p>The camera-ready deadline is <strong>November 15, 2026 (AoE)</strong>. The page limits remain the same as for the original submission:</p>
-          <ul>
-            <li><strong>Short papers:</strong> Maximum 4 pages, excluding references and appendix. An appendix of unlimited length is permitted.</li>
-            <li><strong>Grand Challenges:</strong> Maximum 1 page, excluding references. No appendix is permitted.</li>
-          </ul>
-          <p>Please <strong>de-anonymize</strong> your camera-ready submission by restoring author names and affiliations and removing anonymization intended for double-blind review. <strong>The author list must remain identical to the author list on OpenReview.</strong></p>
-          <p>Use <code>\usepackage[final]{neurips_2026}</code> to enable final formatting, reveal author names, and activate the <code>\begin{ack}</code> acknowledgment environment.</p>
-          <h3>Workshop Participation Policy</h3>
-          <p>The workshop is intended to be an <strong>in-person interactive event</strong>. Accepted papers are therefore expected to be presented in person by at least one author or designated presenter. Remote oral presentations may be permitted only in exceptional circumstances (e.g., participation from another official NeurIPS location, visa or medical issues), subject to the workshop's technical constraints. If no presenter can attend in person, the paper will remain accepted but will be identified as "not presented" on the workshop website.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="program" class="section section-soft">
-      <div class="container narrow reveal">
-        <div class="section-heading-row"><h2>Program</h2><p>Times shown in CET</p></div>
-        <div class="program" role="table" aria-label="Workshop program">
-          <div class="program-row program-head" role="row"><div role="columnheader">Time</div><div role="columnheader">Session</div><div role="columnheader">Speaker(s)</div></div>
-          <div class="program-row"><time>08:30 – 08:40</time><div>Opening Remarks</div><div>Organizers</div></div>
-          <div class="program-row"><time>08:40 – 09:25</time><div>Invited Vision Talks · Efficiency</div><div>Rahim Entezari · Katharina Eggensperger · Michael Kamp</div></div>
-          <div class="program-row"><time>09:25 – 10:00</time><div>Contributed Oral Presentations I (3 talks · 10 min each + Q&amp;A)</div><div>Speakers TBA</div></div>
-          <div class="program-row break"><time>10:00 – 11:30</time><div>Poster Session 1</div><div>—</div></div>
-          <div class="program-row"><time>11:30 – 12:30</time><div>Invited Vision Talks · Scaling Laws &amp; Theory</div><div>Florian E. Dorner · Bruno Loureiro · Alexander van Meegen · Hannah Pinson</div></div>
-          <div class="program-row break"><time>12:30 – 14:00</time><div>Lunch</div><div>—</div></div>
-          <div class="program-row"><time>14:00 – 14:35</time><div>Contributed Oral Presentations II (3 talks · 10 min each + Q&amp;A)</div><div>Speakers TBA</div></div>
-          <div class="program-row"><time>14:35 – 15:20</time><div>Grand Challenges &amp; Research Directions · Panel Discussion</div><div>Organizers + Panelists</div></div>
-          <div class="program-row"><time>15:20 – 15:30</time><div>Closing Remarks &amp; Best Paper Announcement</div><div>Organizers</div></div>
-          <div class="program-row break"><time>15:30 – 17:00</time><div>Poster Session 2</div><div>—</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="organizers" class="section">
-      <div class="container narrow reveal">
-        <h2>Organizing Team</h2>
-        <p class="origin-note">The workshop originates from the <a href="https://sites.google.com/view/efficientml" target="_blank" rel="noopener noreferrer">ELLIS Mathematics and Efficiency of Deep Learning Reading Group</a>.</p>
-        <div class="organizer-list">
-          <article class="organizer-card"><a class="organizer-image-link" href="https://sites.google.com/view/olgasaukh" target="_blank" rel="noopener noreferrer"><img src="images/organizers/olga-saukh.jpg" alt="Olga Saukh"></a><div><h3><a href="https://sites.google.com/view/olgasaukh" target="_blank" rel="noopener noreferrer">Olga Saukh</a></h3><p>Graz University of Technology, Austria</p></div></article>
-          <article class="organizer-card"><a class="organizer-image-link" href="https://rc-trust.ai/about/scientists/linara-adilova" target="_blank" rel="noopener noreferrer"><img src="images/organizers/linara-adilova.jpg" alt="Linara Adilova"></a><div><h3><a href="https://rc-trust.ai/about/scientists/linara-adilova" target="_blank" rel="noopener noreferrer">Linara Adilova</a></h3><p>TU Dortmund and RC Trust, Germany</p></div></article>
-          <article class="organizer-card"><a class="organizer-image-link" href="https://www.spsc.tugraz.at/people/bernhard-geiger.html" target="_blank" rel="noopener noreferrer"><img src="images/organizers/bernhard-geiger.jpg" alt="Bernhard Geiger"></a><div><h3><a href="https://www.spsc.tugraz.at/people/bernhard-geiger.html" target="_blank" rel="noopener noreferrer">Bernhard Geiger</a></h3><p>Graz University of Technology, Austria</p></div></article>
-          <article class="organizer-card"><a class="organizer-image-link" href="https://yedizhang.github.io/" target="_blank" rel="noopener noreferrer"><img src="images/organizers/yedi-zhang.jpg" alt="Yedi Zhang"></a><div><h3><a href="https://yedizhang.github.io/" target="_blank" rel="noopener noreferrer">Yedi Zhang</a></h3><p>University College London, UK</p></div></article>
-          <article class="organizer-card"><a class="organizer-image-link" href="https://flavio-martinelli.github.io" target="_blank" rel="noopener noreferrer"><img src="images/organizers/flavio-martinelli.jpg" alt="Flavio Martinelli"></a><div><h3><a href="https://flavio-martinelli.github.io" target="_blank" rel="noopener noreferrer">Flavio Martinelli</a></h3><p>EPFL Lausanne, Switzerland</p></div></article>
-        </div>
-        <div class="ellis-logos" aria-label="ELLIS Units">
-          <img src="images/organizers/ellis_unit_graz.png" alt="ELLIS Unit Graz">
-          <img src="images/organizers/ellis_unit_lausanne.png" alt="ELLIS Unit Lausanne">
-          <img src="images/organizers/ellis_unit_nrw.png" alt="ELLIS Unit North Rhine-Westphalia">
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section section-soft">
-      <div class="container narrow reveal">
-        <h2>Contact</h2>
-        <p class="contact-copy">For questions or further information regarding the workshop, please contact the organizing committee: <a href="mailto:axiom.neurips2026@gmail.com">axiom.neurips2026@gmail.com</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="container narrow footer-row"><p>AXIOM 2026 · Foundations of Efficient Deep Learning · NeurIPS 2026</p><a href="#top">Back to top ↑</a></div></footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="nav-wrap container">
+<a aria-label="Back to the top of AXIOM 2026" class="brand" href="#top">
+<span aria-hidden="true" class="wordmark wordmark-small"><span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span></span>
+<span class="sr-only">AXIOM 2026</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button"><span class="sr-only">Open menu</span><span></span><span></span><span></span></button>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav">
+<a href="#overview">Overview</a>
+<a href="#speakers">Invited Speakers</a>
+<a href="#cfp">CFP</a>
+<a href="#program">Program</a><a href="#accepted-papers">Accepted Papers</a>
+<a href="#organizers">Organizing Team</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero">
+<div class="hero-overlay"></div>
+<div class="container hero-content reveal">
+<div aria-label="AXIOM" class="hero-wordmark"><span aria-hidden="true" class="wordmark"><span class="letter letter-a">A</span><span class="letter letter-dark">X</span><span class="letter letter-i">I</span><span class="letter letter-dark">O</span><span class="letter letter-dark">M</span></span></div>
+<h1 class="sr-only" id="hero-title">AXIOM 2026</h1>
+<p class="hero-subtitle">Foundations of Efficient Deep Learning</p>
+<p class="hero-tagline"><strong><em>Towards predictive principles for efficient AI connecting deep learning theory, scaling laws, and efficiency</em></strong></p>
+<div aria-hidden="true" class="hero-rule"></div>
+<p class="hero-meta"><strong>NeurIPS 2026 · Paris, France</strong></p>
+<p class="hero-date"><strong>December 13, 2026</strong></p>
+<p class="hero-room"><strong>Room: Salle 252 · Location: Palais des Congrès de Paris</strong></p>
+<div aria-label="Workshop actions" class="hero-actions">
+<a class="button button-primary" href="#cfp">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"></path></svg>
+<span>Call for Papers</span>
+</a>
+<a class="button button-ghost" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+<span>Submit on OpenReview</span>
+</a>
+</div>
+</div>
+</section>
+<section class="section" id="overview">
+<div class="container narrow reveal prose">
+<h2>About the Workshop</h2>
+<p>Recent advances in deep learning theory suggest that machine learning is gradually evolving from an empirical discipline into a predictive science. Scaling laws, optimization theory, learning dynamics, and representation learning increasingly explain why modern deep learning systems work. Yet these advances have had limited impact on one of today's most pressing challenges: building AI systems that are efficient under realistic constraints of compute, memory, energy, communication, and data. Current efficiency techniques, such as pruning, quantization, sparse computation, adaptive inference, and efficient architecture, remain largely driven by empirical investigation. Conversely, many theoretical advances explain observations only after the fact, rather than predicting which algorithms or architectures will be most effective before expensive experimentation.</p>
+<p>The AXIOM Workshop brings together researchers from deep learning theory, machine learning systems, optimization, and efficient AI to explore a central question:</p>
+<blockquote>Can we develop predictive principles that guide the design of efficient AI systems?</blockquote>
+<p><strong>Our goal</strong> is to bridge theory and practice by identifying the mathematical principles underlying efficient learning and by defining the next generation of research challenges for efficient deep learning. The workshop features invited vision talks, contributed papers, posters, panel discussions, and a community-driven <a href="#grand-challenges">Grand Challenges initiative</a> that will collectively shape a research agenda for the foundations of efficient AI.</p>
+</div>
+</section>
+<section class="section section-dark" id="speakers">
+<div class="container narrow reveal">
+<h2>Invited Speakers</h2>
+<div class="speaker-grid">
+<article class="speaker-card">
+<img alt="Rahim Entezari" class="speaker-photo" src="images/speakers/rahim-entezari.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Rahim Entezari</h3><p>Starting something new ... (ex-StabilityAI, ex-Wayve), UK</p></div>
+</article>
+<article class="speaker-card">
+<img alt="Katharina Eggensperger" class="speaker-photo" src="images/speakers/katharina-eggensperger.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Katharina Eggensperger</h3><p>Lamarr Institute and TU Dortmund, Germany</p></div>
+</article>
+<article class="speaker-card">
+<img alt="Michael Kamp" class="speaker-photo" src="images/speakers/michael-kamp.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Efficiency</p><h3>Michael Kamp</h3><p>Lamarr Institute and TU Dortmund, Germany</p></div>
+</article>
+<article class="speaker-card">
+<a aria-label="Florian E. Dorner's website" href="https://flodorner.github.io/" rel="noopener noreferrer" target="_blank">
+<img alt="Florian E. Dorner" class="speaker-photo" src="images/speakers/florian-dorner.jpg"/>
+</a>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Scaling Laws</p><h3>Florian E. Dorner</h3><p>MPI-IS / ETH Zürich, Germany / Switzerland</p></div>
+</article>
+<article class="speaker-card">
+<img alt="Bruno Loureiro" class="speaker-photo" src="images/speakers/bruno-loureiro.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Bruno Loureiro</h3><p>CNRS &amp; École Normale Supérieure, France</p></div>
+</article>
+<article class="speaker-card">
+<img alt="Alexander van Meegen" class="speaker-photo" src="images/speakers/alexander-van-meegen.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Alexander van Meegen</h3><p>RWTH Aachen, Germany</p></div>
+</article>
+<article class="speaker-card">
+<img alt="Hannah Pinson" class="speaker-photo" src="images/speakers/hannah-pinson.jpg"/>
+<div class="speaker-copy"><p class="speaker-track">Invited Vision Talk · Theory</p><h3>Hannah Pinson</h3><p>Eindhoven University of Technology (TU/e), Netherlands</p></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="cfp">
+<div class="container narrow reveal">
+<h2>Call For Papers</h2>
+<div class="prose">
+<h3>Topics of Interest</h3>
+<p>We welcome submissions addressing theoretical, algorithmic, and systems aspects of efficient deep learning, including but not limited to:</p>
+<ul>
+<li><strong>Predictive Theory for Efficient Learning:</strong> Scaling laws for efficient models, compute-optimal training and inference, predicting capability under resource constraints, optimization and learning dynamics, generalization under limited compute or data, phase transitions in efficient learning;</li>
+<li><strong>Sparsity, Compression, and Model Structure:</strong> Foundations of pruning and quantization, sparse and modular neural networks, lottery tickets and subnetworks, adaptive computation, neural architecture design, representation learning for efficiency;</li>
+<li><strong>Efficient Foundation Models:</strong> Efficient LLMs and multimodal models, efficient reasoning and adaptive inference, mixture-of-experts and modular architectures, test-time adaptation, memory-efficient training and inference, distillation and compression;</li>
+<li><strong>Foundations and Future Directions:</strong> Theoretical limits of efficient AI, new efficiency metrics and benchmarks, predictive models of training dynamics, interpretability of efficient models, mathematical foundations of efficient deep learning, emerging theoretical paradigms for efficient AI.</li>
+</ul>
+<p>Interdisciplinary work connecting theory, algorithms, systems, and hardware is particularly encouraged.</p>
+<h3>Paper Submission</h3>
+<p>We invite submissions presenting <strong>original research, preliminary results, novel ideas, and emerging research directions</strong> that advance the theoretical and practical foundations of efficient deep learning. We particularly encourage work that connects deep learning theory with efficient machine learning, including studies that improve our understanding of resource-efficient learning, reveal new theoretical principles, or bridge the gap between mathematical foundations and practical AI systems.</p>
+<p>We invite short paper submissions (<strong>4 pages</strong>, excluding references) which follow the NeurIPS workshop formatting guidelines. This workshop is non-archival. Outstanding submissions will be invited for a 15-minute oral presentation. All accepted papers will be presented during the poster session and published on the workshop website. A <strong>Best Paper Award</strong> will be presented during the workshop.</p>
+<h3 id="grand-challenges">Grand Challenges Track</h3>
+<p>Beyond research papers, AXIOM introduces a <strong>Grand Challenges</strong> track designed to identify the most important open questions for the future of efficient AI. Instead of reporting completed research, Grand Challenges submissions should articulate important unanswered questions, theoretical gaps, surprising empirical observations, or future research opportunities. We particularly encourage contributions on:</p>
+<ul>
+<li>Open theoretical questions motivated by efficient AI;</li>
+<li>Efficiency methods lacking theoretical explanations;</li>
+<li>Contradictions between theory and practice;</li>
+<li>Missing benchmarks, evaluation methodologies, or efficiency metrics.</li>
+</ul>
+<p>Accepted submissions will be published on the workshop website and synthesized into a community report that will serve as the starting point for an interactive discussion session during the workshop. The insights from this discussion will contribute to a community position paper outlining a research agenda for predictive and efficient AI.</p>
+<p>Grand Challenges submissions should consist of a one-page abstract plus references, with no appendix. They will undergo a light review and accepted submissions will be published on the workshop webpage.</p>
+<h3>Important Dates</h3>
+<dl class="dates-list">
+<div><dt>Paper submission</dt><dd>August 29, 2026 (11:59 PM UTC-0)</dd></div>
+<div><dt>Author notification</dt><dd>September 29, 2026 (AoE)</dd></div>
+<div><dt>Camera-ready deadline</dt><dd>November 15, 2026 (AoE)</dd></div>
+</dl>
+<h3>Submission Details</h3>
+<p><strong>Submission site:</strong> <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" rel="noopener noreferrer" target="_blank">OpenReview</a>.</p>
+<p><strong>Submission format instructions:</strong></p>
+<ul>
+<li><strong>Papers:</strong> 4 pages excluding references and appendix, double-blind;</li>
+<li><strong>Grand Challenges:</strong> 1 page excluding references, no appendix, double-blind.</li>
+</ul>
+<p>Please use the <a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip">NeurIPS 2026 LaTeX template</a>. All papers will undergo peer review by the Program Committee.</p>
+<p>Following the <a href="https://neurips.cc/Conferences/2026/WorkshopsGuidance" rel="noopener noreferrer" target="_blank">Guidance for NeurIPS Workshop Proposals 2026</a>, workshop submissions must not duplicate work previously published at machine learning or related conferences. Work presented at the main NeurIPS conference must not also appear in the workshop, including as part of an invited talk. All authors, reviewers, presenters, and participants are expected to follow the <a href="https://neurips.cc/public/CodeOfConduct" rel="noopener noreferrer" target="_blank">NeurIPS Code of Conduct</a>.</p>
+<p><a class="button button-primary submission-button" href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/AXIOM" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"></path></svg>
+<span>Submit to OpenReview</span>
+</a></p>
+<h3>Camera-Ready Instructions</h3>
+<p>The camera-ready deadline is <strong>November 15, 2026 (AoE)</strong>. The page limits remain the same as for the original submission:</p>
+<ul>
+<li><strong>Short papers:</strong> Maximum 4 pages, excluding references and appendix. An appendix of unlimited length is permitted.</li>
+<li><strong>Grand Challenges:</strong> Maximum 1 page, excluding references. No appendix is permitted.</li>
+</ul>
+<p>Please <strong>de-anonymize</strong> your camera-ready submission by restoring author names and affiliations and removing anonymization intended for double-blind review. <strong>The author list must remain identical to the author list on OpenReview.</strong></p>
+<p>Use <code>\usepackage[final]{neurips_2026}</code> to enable final formatting, reveal author names, and activate the <code>\begin{ack}</code> acknowledgment environment.</p>
+<h3>Workshop Participation Policy</h3>
+<p>The workshop is intended to be an <strong>in-person interactive event</strong>. Accepted papers are therefore expected to be presented in person by at least one author or designated presenter. Remote oral presentations may be permitted only in exceptional circumstances (e.g., participation from another official NeurIPS location, visa or medical issues), subject to the workshop's technical constraints. If no presenter can attend in person, the paper will remain accepted but will be identified as "not presented" on the workshop website.</p>
+</div>
+</div>
+</section>
+<section class="section section-soft" id="program">
+<div class="container narrow reveal">
+<div class="section-heading-row"><h2>Program</h2><p>Times shown in CET</p></div>
+<div aria-label="Workshop program" class="program" role="table">
+<div class="program-row program-head" role="row"><div role="columnheader">Time</div><div role="columnheader">Session</div><div role="columnheader">Speaker(s)</div></div>
+<div class="program-row"><time>08:30 – 08:40</time><div>Opening Remarks</div><div>Organizers</div></div>
+<div class="program-row"><time>08:40 – 09:25</time><div>Invited Vision Talks · Efficiency</div><div>Rahim Entezari · Katharina Eggensperger · Michael Kamp</div></div>
+<div class="program-row"><time>09:25 – 10:00</time><div>Contributed Oral Presentations I (3 talks · 10 min each + Q&amp;A)</div><div>Speakers TBA</div></div>
+<div class="program-row break"><time>10:00 – 11:30</time><div>Poster Session 1</div><div>—</div></div>
+<div class="program-row"><time>11:30 – 12:30</time><div>Invited Vision Talks · Scaling Laws &amp; Theory</div><div>Florian E. Dorner · Bruno Loureiro · Alexander van Meegen · Hannah Pinson</div></div>
+<div class="program-row break"><time>12:30 – 14:00</time><div>Lunch</div><div>—</div></div>
+<div class="program-row"><time>14:00 – 14:35</time><div>Contributed Oral Presentations II (3 talks · 10 min each + Q&amp;A)</div><div>Speakers TBA</div></div>
+<div class="program-row"><time>14:35 – 15:20</time><div>Grand Challenges &amp; Research Directions · Panel Discussion</div><div>Organizers + Panelists</div></div>
+<div class="program-row"><time>15:20 – 15:30</time><div>Closing Remarks &amp; Best Paper Announcement</div><div>Organizers</div></div>
+<div class="program-row break"><time>15:30 – 17:00</time><div>Poster Session 2</div><div>—</div></div>
+</div>
+</div>
+</section>
+<section class="section" id="accepted-papers"><div class="container narrow reveal prose"><h2>Accepted Papers</h2><h3>Accepted Grand Challenges (7)</h3><ul class="accepted-paper-list"><li><a href="https://openreview.net/forum?id=HuUcXoVQ9W" rel="noopener noreferrer" target="_blank">Grand Challenge: Gaming the Hardware Lottery</a></li><li><a href="https://openreview.net/forum?id=AFWMSe0WOT" rel="noopener noreferrer" target="_blank">Grand Challenge: Measuring Severity</a></li><li><a href="https://openreview.net/forum?id=Pqmwh6zbbv" rel="noopener noreferrer" target="_blank">Grand Challenge: On the Loss-Landscape Connectivity in Federated Learning</a></li><li><a href="https://openreview.net/forum?id=NpmETydpiR" rel="noopener noreferrer" target="_blank">Grand Challenge: Predict Task-Relative Resource Frontiers Before Deployment</a></li><li><a href="https://openreview.net/forum?id=TB8qyKLznl" rel="noopener noreferrer" target="_blank">Grand Challenge: Predict Where the Next Bit Should Go, Before You Quantize</a></li><li><a href="https://openreview.net/forum?id=TNzzvzn1rX" rel="noopener noreferrer" target="_blank">Grand Challenge: Towards Deep-Learning Architectures That Respect Causal Principles</a></li><li><a href="https://openreview.net/forum?id=1zswKubgPs" rel="noopener noreferrer" target="_blank">Grand Challenge: Towards Financial World Modeling: An Open Efficiency Question</a></li></ul><h3>Accepted Oral Presentations (6)</h3><ul class="accepted-paper-list"><li><a href="https://openreview.net/forum?id=AgXix7hTsb" rel="noopener noreferrer" target="_blank">Estimating Optimal Hyperparameter Scaling Laws Efficiently through Power-Law Entropy Search</a></li><li><a href="https://openreview.net/forum?id=RH9ZjXOrYj" rel="noopener noreferrer" target="_blank">Hot training errors predict cold test errors in the interpolation regime</a></li><li><a href="https://openreview.net/forum?id=QRSUIHTAR4" rel="noopener noreferrer" target="_blank">Learning Dynamics of Chain-of-Thought State Tracking in a Solvable Transformer Model</a></li><li><a href="https://openreview.net/forum?id=WfamdVi3VV" rel="noopener noreferrer" target="_blank">MegaTabICL: Efficient Scaling of Tabular Foundation Model Pretraining</a></li><li><a href="https://openreview.net/forum?id=5aVnVHCPqV" rel="noopener noreferrer" target="_blank">Towards Efficient Diffusion Language Modeling via Parallel Reservoir Computing</a></li><li><a href="https://openreview.net/forum?id=PzJ1BnzTwS" rel="noopener noreferrer" target="_blank">Understanding and Exploiting Weight Update Sparsity for Communication-Efficient Distributed RL</a></li></ul><h3>Accepted Poster Presentations (84)</h3><ul class="accepted-paper-list"><li><a href="https://openreview.net/forum?id=k7MlmpLZXN" rel="noopener noreferrer" target="_blank">A Boundary-Layer Mechanism for One-Third Scaling in Online Softmax Classification</a></li><li><a href="https://openreview.net/forum?id=XfkMSpGBV3" rel="noopener noreferrer" target="_blank">A Closed Form Depth-Width Law for Neural Collapse in Deep Linear Networks</a></li><li><a href="https://openreview.net/forum?id=S5ack3Pfuc" rel="noopener noreferrer" target="_blank">A First-Order Theory of Decision Flips Under Post-Training Quantization: What It Predicts, and Where It Breaks</a></li><li><a href="https://openreview.net/forum?id=rKyTImdGpZ" rel="noopener noreferrer" target="_blank">ACE: An Analytical Rate Proxy for Compression-aware Optimization</a></li><li><a href="https://openreview.net/forum?id=HnzKqEb3aD" rel="noopener noreferrer" target="_blank">Adaptive-Depth Is a Finishing Stage</a></li><li><a href="https://openreview.net/forum?id=8CHf5OB1Zz" rel="noopener noreferrer" target="_blank">AdaqL: Adaptive Mixed-Precision Layer-wise Quantization for Large Language Models</a></li><li><a href="https://openreview.net/forum?id=Iq9bJ8eN28" rel="noopener noreferrer" target="_blank">Adversarial Training Cannot be Reduced to Regularization in Non-Linear Models</a></li><li><a href="https://openreview.net/forum?id=GdeAnDy2eB" rel="noopener noreferrer" target="_blank">Amortizing Scaling Law Construction Costs</a></li><li><a href="https://openreview.net/forum?id=8bNb5kFnya" rel="noopener noreferrer" target="_blank">Back to Basics: Testing Hessian-Based Sensitivity Scores for PoT Weight-Quantization Damage</a></li><li><a href="https://openreview.net/forum?id=YcoEJouETl" rel="noopener noreferrer" target="_blank">Balancing Performance and Forgetting via Intermediate Principal Components</a></li><li><a href="https://openreview.net/forum?id=la30jCCN1h" rel="noopener noreferrer" target="_blank">Beyond Gaussian Initialization: Activation-Induced Gibbs States for Critical and Width-Efficient Networks</a></li><li><a href="https://openreview.net/forum?id=q4FCmBLlE0" rel="noopener noreferrer" target="_blank">BiRRM: Bidirectional Token Mixing for Recurrent Reasoning Models</a></li><li><a href="https://openreview.net/forum?id=k1ZNv0YU9v" rel="noopener noreferrer" target="_blank">C3: Speech-Guided KV Retrieval for Efficient Long-Context SpeechLLM Inference</a></li><li><a href="https://openreview.net/forum?id=4k0RZHvRiP" rel="noopener noreferrer" target="_blank">CAGE-NAS: Certified Functional Descent for Efficient Model Growth</a></li><li><a href="https://openreview.net/forum?id=oEE63TCWXb" rel="noopener noreferrer" target="_blank">Circular Models Trained with Equilibrium Propagation Unlock Test-Time Computations</a></li><li><a href="https://openreview.net/forum?id=N78HJlbvt5" rel="noopener noreferrer" target="_blank">COALA 2: Adaptive Rank Selection for Context-Aware Low-Rank Approximation</a></li><li><a href="https://openreview.net/forum?id=FXJYGavsBg" rel="noopener noreferrer" target="_blank">Component-Weighted Centroid Search for Exact Incremental BPE</a></li><li><a href="https://openreview.net/forum?id=zYoFdqrp0c" rel="noopener noreferrer" target="_blank">Compute-Optimal Scaling Laws for Spiking Language Models</a></li><li><a href="https://openreview.net/forum?id=X5eqc4PAur" rel="noopener noreferrer" target="_blank">Contrastive Activation-Guided Zeroth-Order Preference Optimisation for Memory-Efficient LLM Alignment</a></li><li><a href="https://openreview.net/forum?id=GNETIoR0OB" rel="noopener noreferrer" target="_blank">Curriculum Learning with Compositional Data</a></li><li><a href="https://openreview.net/forum?id=ta2dr2mgQt" rel="noopener noreferrer" target="_blank">DeCO: Discriminative Evidence Composition for Fine-Grained Dataset Distillation</a></li><li><a href="https://openreview.net/forum?id=0b75H3NcHp" rel="noopener noreferrer" target="_blank">Delta-SSM: Exact parallelization of spiking State Space Models for Efficient Sequence Modeling</a></li><li><a href="https://openreview.net/forum?id=LqVMr3VaPd" rel="noopener noreferrer" target="_blank">Efficient and Fast Diffusion Language Models with Structured State Space Models</a></li><li><a href="https://openreview.net/forum?id=gqcAeYzbDU" rel="noopener noreferrer" target="_blank">ESPL: Efficient Block Sparse Plus Low-Rank Attention</a></li><li><a href="https://openreview.net/forum?id=JZzVqmUMKX" rel="noopener noreferrer" target="_blank">Exact Solutions and Saddle-to-Saddle Dynamics in Nonlinear Matrix Factorization</a></li><li><a href="https://openreview.net/forum?id=8o1IwZ1V36" rel="noopener noreferrer" target="_blank">Fewer Expert Transfers Without Changing Routing: Expert Eviction for MoE Offloading</a></li><li><a href="https://openreview.net/forum?id=KiajpxBfQf" rel="noopener noreferrer" target="_blank">Functional Degeneracy in Neural Networks: Measurement and Pruning</a></li><li><a href="https://openreview.net/forum?id=wdWiPslaSW" rel="noopener noreferrer" target="_blank">GASP: Group-regularized Adaptive Structured Pruning</a></li><li><a href="https://openreview.net/forum?id=OFU3HzHOSG" rel="noopener noreferrer" target="_blank">Gating Enables Long-Range Recall in Recurrent Logic Gate Networks</a></li><li><a href="https://openreview.net/forum?id=7fTS2tdloK" rel="noopener noreferrer" target="_blank">HSWA: Hierarchical Sliding Window Attention</a></li><li><a href="https://openreview.net/forum?id=czLvGKXBuN" rel="noopener noreferrer" target="_blank">ICICLE: In-Context Inference for Curve-Learning Extrapolation</a></li><li><a href="https://openreview.net/forum?id=pHuiqnaevM" rel="noopener noreferrer" target="_blank">IrekoGPT: Turning Structured Pruning into Post-Hoc Slimmable LLMs</a></li><li><a href="https://openreview.net/forum?id=fVLbLjuHzD" rel="noopener noreferrer" target="_blank">Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?</a></li><li><a href="https://openreview.net/forum?id=SLWIsAoP8N" rel="noopener noreferrer" target="_blank">LeanTTA: A Backpropagation-Free, Stateless Approach to On-Device Test-Time Adaptation</a></li><li><a href="https://openreview.net/forum?id=O5K1cA34hu" rel="noopener noreferrer" target="_blank">Learning Structured Sparsity Beyond SALAAD: Bridging Model Compressibility and Efficient Inference</a></li><li><a href="https://openreview.net/forum?id=MiLEuEGmhw" rel="noopener noreferrer" target="_blank">Linearized 2-Simplicial Attention</a></li><li><a href="https://openreview.net/forum?id=7atFp2RlHB" rel="noopener noreferrer" target="_blank">LRCC: Generalizing Low-rank Compression with Conditional Computation</a></li><li><a href="https://openreview.net/forum?id=IboIDwwLWW" rel="noopener noreferrer" target="_blank">Manifold-Constrained Hyper-Connections for Parameter-Efficient Finetuning</a></li><li><a href="https://openreview.net/forum?id=7tNeBpmmO7" rel="noopener noreferrer" target="_blank">MARCH: Content-Routed State Anchors for Efficient Recurrent Memory</a></li><li><a href="https://openreview.net/forum?id=AIJeDhzclN" rel="noopener noreferrer" target="_blank">Match the Distribution, Not the Compute: Post-Training Multi-Token Prediction Heads</a></li><li><a href="https://openreview.net/forum?id=NE193n19qO" rel="noopener noreferrer" target="_blank">Memory-Efficient Speculative Decoding with Quantized Draft KV Cache</a></li><li><a href="https://openreview.net/forum?id=7O02rvopFl" rel="noopener noreferrer" target="_blank">Mixtures of Embedding Dimension Experts</a></li><li><a href="https://openreview.net/forum?id=R8iolZPN4u" rel="noopener noreferrer" target="_blank">Model Capacity Dominates Language Resourcing in Multilingual ASR Quantization</a></li><li><a href="https://openreview.net/forum?id=y4NIK5UnSv" rel="noopener noreferrer" target="_blank">On the Approximation of Chebyshev Polynomials with Looped ReLU Networks</a></li><li><a href="https://openreview.net/forum?id=4ShlV3KN5b" rel="noopener noreferrer" target="_blank">Output-Aware Block Influence: Jacobian-Lens Weighting for Depth Pruning</a></li><li><a href="https://openreview.net/forum?id=FTaqB8zCIq" rel="noopener noreferrer" target="_blank">Per-Symbol Exposure, Not Vocabulary Size, Governs Symbol Learnability in Transformers</a></li><li><a href="https://openreview.net/forum?id=cpziDxY4Ix" rel="noopener noreferrer" target="_blank">Port-Hamiltonian Neural Networks for Systems with Multiple Asymptotically Stable Equilibria</a></li><li><a href="https://openreview.net/forum?id=hBfqLCEXCW" rel="noopener noreferrer" target="_blank">Prism Transformer: Progressive Head Schedules for Hierarchical Attention Processing</a></li><li><a href="https://openreview.net/forum?id=SEaIJ2pxDm" rel="noopener noreferrer" target="_blank">Probing SAM Perturbations Through Statistical Replay</a></li><li><a href="https://openreview.net/forum?id=381nqljeZH" rel="noopener noreferrer" target="_blank">Reconstruction-Optimized Expert Pruning for Mixture-of-Experts Language Models</a></li><li><a href="https://openreview.net/forum?id=TPrRxane30" rel="noopener noreferrer" target="_blank">Resource-Aware Joint Kernel Fusion for Ahead-of-Time Inference</a></li><li><a href="https://openreview.net/forum?id=ZT8VjBdETc" rel="noopener noreferrer" target="_blank">Rethinking Edge-of-Chaos Initialization for Sparsifying Activations</a></li><li><a href="https://openreview.net/forum?id=Br3FjOx6i6" rel="noopener noreferrer" target="_blank">RiPPL: Rigging Post-hoc Pruning Layerwise</a></li><li><a href="https://openreview.net/forum?id=xNMQJVszjV" rel="noopener noreferrer" target="_blank">Router Sensitivity Under Lightweight Fine-Tuning Identifies Prunable Experts in Mixture-of-Experts Models</a></li><li><a href="https://openreview.net/forum?id=o0b7d3p7Wq" rel="noopener noreferrer" target="_blank">S-DPQ: Block-Level Angular and Norm Matching for Data-Free Ternary Quantization</a></li><li><a href="https://openreview.net/forum?id=WVQXm2jdei" rel="noopener noreferrer" target="_blank">SACQ: Structure-Aware Codebook Quantization for Sub-2-Bit Vision-Language-Action Models</a></li><li><a href="https://openreview.net/forum?id=E9kQcE7ttV" rel="noopener noreferrer" target="_blank">Sample-Efficiency of Kolmogorov–Arnold Networks</a></li><li><a href="https://openreview.net/forum?id=JM8lUtn7Fu" rel="noopener noreferrer" target="_blank">Scaling of Capability and Efficiency at Inference Time in Large Reasoning Models</a></li><li><a href="https://openreview.net/forum?id=PcyRPozsBF" rel="noopener noreferrer" target="_blank">Sink vs. Diagonal Attention: Sharpened Cost Bounds and Comparison Regimes</a></li><li><a href="https://openreview.net/forum?id=u7wVn8sD9P" rel="noopener noreferrer" target="_blank">Sketching Attention Sinks in LLMs</a></li><li><a href="https://openreview.net/forum?id=KAboFJzVFo" rel="noopener noreferrer" target="_blank">SSD: Spatially Speculative Decoding Accelerates Autoregressive Image Generation</a></li><li><a href="https://openreview.net/forum?id=6HaGYWog4R" rel="noopener noreferrer" target="_blank">Stuck on "A": Diagnosing and Repairing Interface Injury in Attention-to-KDA Linearization of a 0.6B Language Model</a></li><li><a href="https://openreview.net/forum?id=3bTZhBP1xp" rel="noopener noreferrer" target="_blank">Surfing the Activation Wave: An Information-Theoretic and Geometric Analysis of LLM Hidden States Applied to Speculative Decoding</a></li><li><a href="https://openreview.net/forum?id=jKWZeOpnoA" rel="noopener noreferrer" target="_blank">SVD-Surgeon: Optimal Singular-Value Surgery for Large Language Model Compression</a></li><li><a href="https://openreview.net/forum?id=TA7mwvTV1x" rel="noopener noreferrer" target="_blank">Task Alignment as a Data-Level Predictor of Inter-Task Dynamics in Linear MTL</a></li><li><a href="https://openreview.net/forum?id=xNU0sGOVhA" rel="noopener noreferrer" target="_blank">The Price of Precision: A Calibrated Cost Model for Mixed-Precision LLM Serving</a></li><li><a href="https://openreview.net/forum?id=Kgz0zlJVS6" rel="noopener noreferrer" target="_blank">The Spectral Anatomy of Plasticity Loss</a></li><li><a href="https://openreview.net/forum?id=kz0QQ35CNZ" rel="noopener noreferrer" target="_blank">The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally</a></li><li><a href="https://openreview.net/forum?id=MoQnYY6zCh" rel="noopener noreferrer" target="_blank">Threshold Renormalization Explains Weak-to-Strong Generalization in Diagonal Linear Networks</a></li><li><a href="https://openreview.net/forum?id=HUSyjxM3eu" rel="noopener noreferrer" target="_blank">ThriftAttention: Selective Mixed Precision for Long-Context FP4 Attention</a></li><li><a href="https://openreview.net/forum?id=N94g2HMl7j" rel="noopener noreferrer" target="_blank">TopK-Guided: Adaptive, Budget-Aware Activation Sparsity for Efficient LLM Inference</a></li><li><a href="https://openreview.net/forum?id=YaCphwE2KS" rel="noopener noreferrer" target="_blank">Towards an Expressivity-Normalized Energy-Demand Comparison of ANNs and SNNs</a></li><li><a href="https://openreview.net/forum?id=HU3rmRNta3" rel="noopener noreferrer" target="_blank">Transmuting prompts into weights</a></li><li><a href="https://openreview.net/forum?id=y1UytVjMdP" rel="noopener noreferrer" target="_blank">TreeProp:  Training $N$-Layer Deep Networks with $\mathcal{O}(\log N)$ Parallel Time Complexity</a></li><li><a href="https://openreview.net/forum?id=41kifxBisj" rel="noopener noreferrer" target="_blank">Trust the Mass: Forced Weights in KV-Cache Eviction</a></li><li><a href="https://openreview.net/forum?id=nD6DCIrA7i" rel="noopener noreferrer" target="_blank">Unsupervised Recursive Reasoners for Combinatorial Problems</a></li><li><a href="https://openreview.net/forum?id=iRXshV6hKZ" rel="noopener noreferrer" target="_blank">Varying-Width Vision-Transformers for Efficient Vision–Language Models</a></li><li><a href="https://openreview.net/forum?id=VjMTFZhSZc" rel="noopener noreferrer" target="_blank">Vision-TabPFN: An Efficient Tabular Prior for Few-Shot Vision</a></li><li><a href="https://openreview.net/forum?id=moGyCpsG7g" rel="noopener noreferrer" target="_blank">Voronoi-Calibrated Order Selection for Bayesian Softmax-Gated Mixtures of Experts</a></li><li><a href="https://openreview.net/forum?id=ZofVlJ2Y9m" rel="noopener noreferrer" target="_blank">Weight Pair Encoding: Inducing A Smaller Grammar in Neural Network Weights</a></li><li><a href="https://openreview.net/forum?id=uvY0Izjw9P" rel="noopener noreferrer" target="_blank">What is the role of Learning Rate in a Mixture-of-Experts ResNet</a></li><li><a href="https://openreview.net/forum?id=r9gIjLoGX7" rel="noopener noreferrer" target="_blank">What Makes Recurrence Generalize Across Lengths?</a></li><li><a href="https://openreview.net/forum?id=kOxMYOcSn4" rel="noopener noreferrer" target="_blank">Why Classifier-Free Guidance Is Fragile Under Quantization:  A Mechanistic Study</a></li><li><a href="https://openreview.net/forum?id=x3FOpcswLP" rel="noopener noreferrer" target="_blank">xRRMs: Explorative Recurrent Reasoning Models</a></li></ul></div></section><section class="section" id="organizers">
+<div class="container narrow reveal">
+<h2>Organizing Team</h2>
+<p class="origin-note">The workshop originates from the <a href="https://sites.google.com/view/efficientml" rel="noopener noreferrer" target="_blank">ELLIS Mathematics and Efficiency of Deep Learning Reading Group</a>.</p>
+<div class="organizer-list">
+<article class="organizer-card"><a class="organizer-image-link" href="https://sites.google.com/view/olgasaukh" rel="noopener noreferrer" target="_blank"><img alt="Olga Saukh" src="images/organizers/olga-saukh.jpg"/></a><div><h3><a href="https://sites.google.com/view/olgasaukh" rel="noopener noreferrer" target="_blank">Olga Saukh</a></h3><p>Graz University of Technology, Austria</p></div></article>
+<article class="organizer-card"><a class="organizer-image-link" href="https://rc-trust.ai/about/scientists/linara-adilova" rel="noopener noreferrer" target="_blank"><img alt="Linara Adilova" src="images/organizers/linara-adilova.jpg"/></a><div><h3><a href="https://rc-trust.ai/about/scientists/linara-adilova" rel="noopener noreferrer" target="_blank">Linara Adilova</a></h3><p>TU Dortmund and RC Trust, Germany</p></div></article>
+<article class="organizer-card"><a class="organizer-image-link" href="https://www.spsc.tugraz.at/people/bernhard-geiger.html" rel="noopener noreferrer" target="_blank"><img alt="Bernhard Geiger" src="images/organizers/bernhard-geiger.jpg"/></a><div><h3><a href="https://www.spsc.tugraz.at/people/bernhard-geiger.html" rel="noopener noreferrer" target="_blank">Bernhard Geiger</a></h3><p>Graz University of Technology, Austria</p></div></article>
+<article class="organizer-card"><a class="organizer-image-link" href="https://yedizhang.github.io/" rel="noopener noreferrer" target="_blank"><img alt="Yedi Zhang" src="images/organizers/yedi-zhang.jpg"/></a><div><h3><a href="https://yedizhang.github.io/" rel="noopener noreferrer" target="_blank">Yedi Zhang</a></h3><p>University College London, UK</p></div></article>
+<article class="organizer-card"><a class="organizer-image-link" href="https://flavio-martinelli.github.io" rel="noopener noreferrer" target="_blank"><img alt="Flavio Martinelli" src="images/organizers/flavio-martinelli.jpg"/></a><div><h3><a href="https://flavio-martinelli.github.io" rel="noopener noreferrer" target="_blank">Flavio Martinelli</a></h3><p>EPFL Lausanne, Switzerland</p></div></article>
+</div>
+<div aria-label="ELLIS Units" class="ellis-logos">
+<img alt="ELLIS Unit Graz" src="images/organizers/ellis_unit_graz.png"/>
+<img alt="ELLIS Unit Lausanne" src="images/organizers/ellis_unit_lausanne.png"/>
+<img alt="ELLIS Unit North Rhine-Westphalia" src="images/organizers/ellis_unit_nrw.png"/>
+</div>
+</div>
+</section>
+<section class="section contact-section section-soft" id="contact">
+<div class="container narrow reveal">
+<h2>Contact</h2>
+<p class="contact-copy">For questions or further information regarding the workshop, please contact the organizing committee: <a href="mailto:axiom.neurips2026@gmail.com">axiom.neurips2026@gmail.com</a></p>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container narrow footer-row"><p>AXIOM 2026 · Foundations of Efficient Deep Learning · NeurIPS 2026</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
