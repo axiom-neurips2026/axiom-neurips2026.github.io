@@ -168,7 +168,10 @@
 <li><strong>Grand Challenges:</strong> Maximum 1 page, excluding references. No appendix is permitted.</li>
 </ul>
 <p>Please <strong>de-anonymize</strong> your camera-ready submission by restoring author names and affiliations and removing anonymization intended for double-blind review. <strong>The author list must remain identical to the author list on OpenReview.</strong></p>
-<p>Use <code>\usepackage[final]{neurips_2026}</code> to enable final formatting, reveal author names, and activate the <code>\begin{ack}</code> acknowledgment environment.</p>
+<p>For the camera-ready version, add or uncomment the following two lines near the beginning of your <code>neurips_2026.tex</code> file:</p>
+<pre><code>\usepackage[dblblindworkshop,final]{neurips_2026}
+\workshoptitle{AXIOM Foundations of Efficient Deep Learning}</code></pre>
+<p>The <code>dblblindworkshop</code> option identifies the paper as a workshop submission, while <code>final</code> enables final formatting, reveals author names, and activates the <code>\begin{ack}</code> acknowledgment environment.</p>
 <h3>Poster Presentation Guidelines</h3>
 <p>All posters must be displayed on the provided poster boards; hanging posters on walls is strictly forbidden. Poster clips will be provided. Posters should be in A1 portrait format, or 90 cm (H) × 61 cm (W) / 35.43 inches (H) × 24.02 inches (W), and can be printed via the NeurIPS printing service. <strong>Posters must be removed at the end of each poster session</strong> (morning and afternoon). Any posters left behind will be discarded.</p>
 <h3>Workshop Participation Policy</h3>
